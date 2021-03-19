@@ -11,3 +11,184 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.wrapper {
+  padding-top: 15rem;
+  margin: 0 auto;
+  width: 600px;
+}
+
+#startPage {
+  border: .1rem solid black;
+  border-radius: 1rem;
+  width: 100%;
+  height: 11rem;
+  display: block;
+}
+
+#usernameTextbox {
+  position: absolute;
+  width: 30rem;
+  height: 2rem;
+  text-align: left;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+  margin-top: 4rem;
+  outline: none;
+  border: 0.1rem solid black;
+  border-radius: .5rem;
+
+  -webkit-transition: border 0.1s ease-in-out;
+  transition: border 0.1s ease-in-out;
+}
+#usernameTextbox:focus {
+  border: 0.15rem solid rgb(25, 0, 255);
+}
+
+#nextBtn {
+  position: absolute;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  margin-left: 10.5rem;
+  margin-top: 8rem;
+  outline: none;
+  background-color: cornflowerblue;
+  border: none;
+  color: white;
+  border-radius: .5rem;
+  
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+#nextBtn:hover {
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+#plrName {
+  position: absolute;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
+
+#loadingGif {
+  width: 1rem;
+}
+
+#loadingPage {
+  border: .1rem solid black;
+  border-radius: 1rem;
+  width: 50%;
+  height: 11rem;
+
+  margin-top: 5rem;
+  margin-left: 11rem;
+}
+#loadingImg {
+  position: absolute;
+  width: 10rem;
+  margin-left: 4rem;
+}
+#loadingTxt {
+  position: absolute;
+  margin-left: 4.5rem;
+  margin-top: 7.5rem;
+}
+
+
+#profilePage {
+  border: .1rem solid black;
+  border-radius: 1rem;
+  width: 40rem;
+  height: 40rem;
+
+  margin-top: -5rem;
+  margin-left: 0rem;
+}
+
+.profileStatText {
+  font-size: 2rem;
+  width: 100%;
+}
+
+.statBold {
+  color: rgb(55, 0, 255);
+  text-align: right;
+}
+
+#profileActions {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1rem;
+  padding: 2%;
+  margin-top: 16.5rem;
+}
+
+.profileactbtn {
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: .5rem;
+  
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.profileactbtn:hover {
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+#banBtn {background-color: rgb(255, 115, 115);}
+#unbanBtn {background-color: rgb(100, 237, 118);}
+#historyBtn {background-color: rgb(237, 205, 100);}
+#restartBtn {background-color: rgb(237, 100, 225);}
+#backBtn {background-color: cornflowerblue;}
+#resetStatsBtn {background-color: rgb(100, 205, 237);}
+#resetProfileBtn {background-color: rgb(100, 210, 237);}
+
+#history_page {
+  border-radius: 1rem;
+  width: 30rem;
+  height: 30rem;
+  position: absolute;
+  background-color: rgb(153, 179, 255);
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+  margin-top: -35rem;
+  margin-left: 5.5rem;
+}
+
+#historyContent {
+  overflow-y:auto;
+  height: 27rem;
+  box-sizing: border-box;
+  margin-top: -0.8rem;
+}
+
+.historyText {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#closeBtn {
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  color: white;
+  border-radius: .5rem;
+  background-color: rgb(255, 119, 119);
+  -webkit-transition: box-shadow 0.2s ease-in-out;
+  transition: box-shadow 0.2s ease-in-out;
+  height: 3rem;
+  margin-left: 12rem;
+  margin-top: 1.5rem;
+}
+#closeBtn:hover {
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.2), 0 0 1rem rgba(0, 0, 0, 0.2);
+}
+
+#startpageroot {display: block;}
+#loading_root {display: none;}
+#profile_root {display: none;}
+#history_root {display: none}
